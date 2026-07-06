@@ -25,7 +25,7 @@ Support teams generate a wealth of operational data, but that data often goes un
 ## Key Findings
 
 ### 1. Average Resolution Time by Priority
-![Average Resolution Time by Priority](images/Figure_1.png)
+![Average Resolution Time by Priority](https://raw.githubusercontent.com/jillian-chamberlain/support-ticket-analysis/master/images/Figure_1.png)
 
 Counterintuitively, **Medium priority tickets took the longest to resolve (~35 hours)**, while High and Low priority tickets were resolved in roughly the same time (~32 hours each). This suggests that priority labeling may not be driving resource allocation the way it is intended to — High priority tickets are not necessarily being resolved faster than others.
 
@@ -34,7 +34,7 @@ Counterintuitively, **Medium priority tickets took the longest to resolve (~35 h
 ---
 
 ### 2. Top 5 Agents by Customer Satisfaction
-![Top 5 Agents by Customer Satisfaction](images/Figure_2.png)
+![Top 5 Agents by Customer Satisfaction](https://raw.githubusercontent.com/jillian-chamberlain/support-ticket-analysis/master/images/Figure_2.png)
 
 Customer satisfaction scores (on a 1–5 scale) varied meaningfully across agents, with the top performer averaging **4.06** compared to the lower end of the top 5 at **~3.40**. This gap suggests that individual agent practices may have a measurable impact on the customer experience.
 
@@ -43,7 +43,7 @@ Customer satisfaction scores (on a 1–5 scale) varied meaningfully across agent
 ---
 
 ### 3. Relationship Between Agent Interactions and Survey Results
-![Relationship Between Agent Interactions and Survey Results](images/Figure_3.png)
+![Relationship Between Agent Interactions and Survey Results](https://raw.githubusercontent.com/jillian-chamberlain/support-ticket-analysis/master/images/Figure_3.png)
 
 Most tickets were resolved within **1–10 agent interactions**, regardless of satisfaction score. Notably, tickets requiring up to **60 interactions** still produced the full range of satisfaction scores (1–5), indicating that **ticket complexity alone does not determine customer satisfaction**. Customers can still walk away satisfied even after lengthy or difficult resolutions.
 
