@@ -1,18 +1,89 @@
 # Support Ticket Analysis
 
-## Project Overview
-This project analyzes customer support ticket data to identify trends in **resolution times**, **customer satisfaction** and **survey results**. Key questions include:
-1. Average resolution time by priority.
-2. Top agents by customer satisfaction.
-3. Relationship between agent interactions and survey results
+A data analysis project exploring patterns in customer support ticket data using Python. This project examines resolution efficiency, agent performance, and the relationship between ticket interactions and customer satisfaction to surface insights that could help support teams work more effectively.
 
-## Tools Used
-- Python (Pandas, Matplotlib, Seaborn)
-- Visual Studio Code
+---
+
+## Project Overview
+
+Support teams generate a wealth of operational data, but that data often goes unexamined. This project asks three practical questions:
+
+- Does ticket priority level actually affect how long it takes to resolve an issue?
+- Which agents are delivering the best customer experience?
+- Does the number of interactions on a ticket affect how satisfied the customer is at the end?
+
+---
+
+## Tools & Technologies
+
+- **Python** (pandas, matplotlib)
+- **Excel** (initial data exploration)
+- **GitHub** (version control)
+
+---
+
+## Key Findings
+
+### 1. Average Resolution Time by Priority
+![Average Resolution Time by Priority](images/Figure_1.png)
+
+Counterintuitively, **Medium priority tickets took the longest to resolve (~35 hours)**, while High and Low priority tickets were resolved in roughly the same time (~32 hours each). This suggests that priority labeling may not be driving resource allocation the way it is intended to — High priority tickets are not necessarily being resolved faster than others.
+
+**Potential action:** Review how priority levels are assigned and whether SLAs are enforced differently by priority tier.
+
+---
+
+### 2. Top 5 Agents by Customer Satisfaction
+![Top 5 Agents by Customer Satisfaction](images/Figure_2.png)
+
+Customer satisfaction scores (on a 1–5 scale) varied meaningfully across agents, with the top performer averaging **4.06** compared to the lower end of the top 5 at **~3.40**. This gap suggests that individual agent practices may have a measurable impact on the customer experience.
+
+**Potential action:** Study the habits and workflows of top-performing agents to inform team-wide training and best practices.
+
+---
+
+### 3. Relationship Between Agent Interactions and Survey Results
+![Relationship Between Agent Interactions and Survey Results](images/Figure_3.png)
+
+Most tickets were resolved within **1–10 agent interactions**, regardless of satisfaction score. Notably, tickets requiring up to **60 interactions** still produced the full range of satisfaction scores (1–5), indicating that **ticket complexity alone does not determine customer satisfaction**. Customers can still walk away satisfied even after lengthy or difficult resolutions.
+
+**Potential action:** Focus customer experience improvements on communication quality rather than simply reducing interaction count.
+
+---
 
 ## Project Structure
 
-data/: Contains datasets.
-scripts/: Python scripts for analysis.
-images/: Visualizations.
-results/: Summary outputs.
+```
+support-ticket-analysis/
+├── data/               # Source dataset
+├── scripts/            # Python analysis scripts
+├── images/             # Output visualizations
+│   ├── Figure_1.png    # Resolution time by priority
+│   ├── Figure_2.png    # Top 5 agents by satisfaction
+│   └── Figure_3.png    # Interactions vs. survey results
+├── results/            # Summary outputs
+└── README.md
+```
+
+---
+
+## How to Run
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/jillian-chamberlain/support-ticket-analysis.git
+   ```
+2. Install dependencies
+   ```bash
+   pip install pandas matplotlib
+   ```
+3. Run the analysis script
+   ```bash
+   python scripts/analysis.py
+   ```
+
+---
+
+## About
+
+This project was built as part of an ongoing effort to develop practical data analysis skills using real-world style datasets. It reflects experience working in technical support environments where understanding ticket data can directly improve team performance and customer outcomes.
